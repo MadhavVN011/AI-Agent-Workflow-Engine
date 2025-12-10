@@ -1,7 +1,6 @@
 # 🤖 AI Agent Workflow Engine
 
 > **A backend-only graph engine for building stateful AI agents.**
-> *Submitted for the AI Engineering Internship Assignment.*
 
 ---
 
@@ -44,6 +43,8 @@ ai-agent-workflow-engine/
 ## ⚡ How to Run
 1. Clone & Install
 
+```text
+
 git clone [https://github.com/MadhavVN011/AI-Agent-Workflow-Engine.git](https://github.com/MadhavVN011/AI-Agent-Workflow-Engine.git)
 cd AI-Agent-Workflow-Engine
 
@@ -60,6 +61,8 @@ pip install -r requirements.txt
 python -m uvicorn app.main:app --reload
 The API will be live at: http://127.0.0.1:8000
 
+```
+
 ---
 
 ## 🧪 Testing the "Code Review Agent"
@@ -70,11 +73,13 @@ Step 1: Open Swagger UI: http://127.0.0.1:8000/docs
 Step 2: Use the POST /graph/run endpoint.
 
 Step 3: Paste this JSON payload:
+```text
 
 {
   "initial_state": {
     "code": "def hello():\n    print('debugging')\n    return True"
   }
 }
+```
 
 Step 4: Execute! You will see the agent loop through extract -> analyze -> fix -> analyze until the code is corrected (replacing print with logger).
