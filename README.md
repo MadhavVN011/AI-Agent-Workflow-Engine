@@ -37,8 +37,11 @@ ai-agent-workflow-engine/
 │   └── __init__.py
 ├── requirements.txt     # 📦 Dependencies
 └── README.md            # 📄 Documentation
+```
 
-⚡ How to Run
+---
+
+## ⚡ How to Run
 1. Clone & Install
 
 git clone [https://github.com/MadhavVN011/AI-Agent-Workflow-Engine.git](https://github.com/MadhavVN011/AI-Agent-Workflow-Engine.git)
@@ -57,7 +60,9 @@ pip install -r requirements.txt
 python -m uvicorn app.main:app --reload
 The API will be live at: http://127.0.0.1:8000
 
-🧪 Testing the "Code Review Agent"
+---
+
+## 🧪 Testing the "Code Review Agent"
 This project implements Option A: Code Review Mini-Agent. It takes bad code, detects issues, and automatically fixes them in a loop.
 
 Step 1: Open Swagger UI: http://127.0.0.1:8000/docs
@@ -73,4 +78,3 @@ Step 3: Paste this JSON payload:
 }
 
 Step 4: Execute! You will see the agent loop through extract -> analyze -> fix -> analyze until the code is corrected (replacing print with logger).
-
